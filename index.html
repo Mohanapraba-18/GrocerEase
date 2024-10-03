@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="boot/js/bootstrap.bundle.min.js" ></script>
+    <script src="boot/js/bootstrap.min.js" ></script>
+    <style>
+      .modal-header, h4, .close {
+        background-color: #5cb85c;
+        color:white !important;
+        text-align: center;
+        font-size: 30px;
+      }
+      .modal-footer {
+        background-color: #f9f9f9;
+      }
+      .ripple {
+      position: relative;
+      overflow: hidden;
+    }
+    .ripple::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      transform: scale(10, 10);
+      opacity: 0;
+      transition: transform 0.5s, opacity 1s;
+    }
+    .ripple:active::after {
+      transform: scale(0, 0);
+      opacity: 0.2;
+      transition: 0s;
+    }
+      </style>
+        
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success" href="#"><img src="Images/logo.png">GrocerEase</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav my-auto mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link " href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contact">Contact us</a>
+              </li>
+              
+            </ul>
+            <button type="button" class="btn btn-success ripple" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+              Sign-In
+            </button>
+          </div>        
+        </div>
+    </nav>
+             
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+              <div class="modal-dialog d-flex justify-content-center">
+                <div class="modal-content w-75">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Authentication</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body p-4">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" id="authTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Sign-Up</button>
+                      </li>
+                    </ul>
+          
+                    <!-- Tab panes -->
+                    <div class="tab-content" id="authTabContent">
+                      <!-- Login Form -->
+                      <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form class="mt-3">
+                          <h5 class="text-center">Login</h5>
+                          <!-- Email input -->
+                          <div class="form-outline mb-4">
+                            <label class="form-label" for="loginEmail">Email address</label>
+                            <input type="email" id="loginEmail" class="form-control" />
+                            
+                          </div>
+                          <!-- Password input -->
+                          <div class="form-outline mb-4">
+                            <label class="form-label" for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" class="form-control" />
+                            
+                          </div>
+                          <!-- Submit button -->
+                          <button type="submit" class="btn btn-primary btn-block ripple">Login</button>
+                        </form>
+                      </div>
+                      <!-- Sign-Up Form -->
+                      <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                        <form class="mt-3">
+                          <h5 class="text-center">Sign-Up</h5>
+                          <!-- Username input -->
+                          <div class="form-outline mb-4">
+                            <label class="form-label" for="signUpUsername">Username</label>
+                            <input type="text" id="signUpUsername" class="form-control" />
+                            
+                          </div>
+                          <!-- Email input -->
+                          <div class="form-outline mb-4">
+                            <label class="form-label" for="signUpEmail">Email address</label>
+                            <input type="email" id="signUpEmail" class="form-control" />
+                            
+                          </div>
+                          <!-- Password input -->
+                          <div class="form-outline mb-4">
+                            <label class="form-label" for="signUpPassword">Password</label>
+                            <input type="password" id="signUpPassword" class="form-control" />
+                            
+                          </div>
+                          <!-- Submit button -->
+                          <button type="submit" class="btn btn-primary btn-block ripple">Sign-Up</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+           
+      <section id="home">
+        <h1 class="text-center">GREEN'S PANTRY</h1>
+        <p>Variety's the very spices of life, that gives it all its flavour</p>
+        <div class="input-group m-4">
+            <input type="text"class="form-control" placeholder="Surf here...">
+            <button class="btn signin bg-success text-white">Search</button>
+        </div>
+      </section>
+
+
+      <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img src="Images/natural.png" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 p-lg-5 my-5 p-2">
+                    <h1>ABOUT US</h1>
+                    <p>Welcome to FreshMart, where freshness meets convenience! At FreshMart, we believe that grocery shopping should be a delightful experience, not a chore. Our mission is to bring the finest, freshest, and most affordable groceries right to your doorstep. Powered by cutting-edge AI technology, our platform offers personalized shopping experiences, tailored recipe suggestions, and unbeatable brand comparisons. We are committed to sustainability, quality, and exceptional customer service. Join us in our journey to make everyday shopping simpler, smarter, and more enjoyable. "Freshness you can trust, convenience you deserve." Step into FreshMart, your ultimate destination for all your grocery needs. Our store is stocked with a wide variety of fresh produce, pantry essentials, and specialty items to cater to every taste and preference. Whether you’re looking for organic vegetables, premium meats, or your favorite snacks, we have it all. Our intelligent shopping assistant ensures you find exactly what you need with ease, while our loyalty program rewards you for every purchase. At FreshMart, we are dedicated to providing you with the highest quality products and a seamless shopping experience. "Shop smart, eat fresh, live well."</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="product">
+       
+        <div class="container-fluid my-5 p-4 mx-5">
+            <h1 class="text-center mx-4">OUR PRODUCTS</h1>               
+                  
+                <h1 class="mx-5 p-2">Fruits</h1> 
+                <div id="carouselExampleControls2" class="carousel carousel-dark slide my-5" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="card-wrapper container-sm d-flex justify-content-around">   
+                              <div class="card">
+                                  <img src="images/apple.jpeg" class="card-img-top" >
+                                  <div class="card-body text-center">
+                                      <h5 class="card-title">Apple-Rs.120/Kg</h5>
+                                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <img src="images/mango.jpeg" class="card-img-top" >
+                                  <div class="card-body text-center">
+                                      <h5 class="card-title">Mango-Rs.90/Kg</h5>
+                                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <img src="images/kiwi.jpeg" class="card-img-top" >
+                                  <div class="card-body text-center">
+                                      <h5 class="card-title">Kiwi-Rs.180/Kg</h5>
+                                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="card-wrapper container-sm d-flex justify-content-around">   
+                              <div class="card">
+                                  <img src="images/blackgrapes.jpeg" class="card-img-top" >
+                                  <div class="card-body text-center">
+                                      <h5 class="card-title">Grapes-Rs.50/Kg</h5>
+                                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <img src="images/strawberry.jpeg" class="card-img-top" >
+                                  <div class="card-body text-center">
+                                      <h5 class="card-title">Strawberry-Rs.100/Kg</h5>
+                                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <img src="images/orange.jpeg" class="card-img-top" >
+                                  <div class="card-body text-center">
+                                      <h5 class="card-title">Orange-Rs.150/Kg</h5>
+                                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-wrapper container-sm d-flex justify-content-around">   
+                            <div class="card">
+                                <img src="images/Watermelon.jpeg" class="card-img-top" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Watermelon-Rs.30/Kg</h5>
+                                    <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/cherry.jpeg" class="card-img-top" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Cherry-Rs.90/Kg</h5>
+                                    <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/banana.jpeg" class="card-img-top" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Banana-Rs.36(Dozen)</h5>
+                                    <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev mx-auto" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+              </div>
+            </div>
+            
+        
+      </section>
+
+
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 my-3 p-5">
+              <img src="images/clogo.png" class="img-fluid" />
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 my-3 p-5">
+              <p class="display-2 text-white">Contact Us</p>
+              <form class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Name"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                />
+                <textarea
+                  class="form-control"
+                  placeholder="Enter Your Message"
+                ></textarea>
+                <button class="btn signin btn-success p-2">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer>Copyrights @FinalYearProjectBatch'24</footer>
+    
+</body>
+</html>

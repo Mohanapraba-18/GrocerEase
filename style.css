@@ -1,0 +1,155 @@
+#navbar
+{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index: 100;
+    padding: .5rem 4rem;
+    box-shadow: 5px 5px 20px rgb(101, 101, 101);
+    background: black;
+}
+.navbar .navbar-brand
+{
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+#navbar img{
+    width: 50px;
+    height: 40px;
+    padding-right: 10px;
+}
+#navbarSupportedContent a
+{
+    color: white !important;
+    border-bottom: 2px solid transparent;
+    padding-right: 20px;
+}
+#navbarSupportedContent a:hover
+{
+    border-bottom: 2px solid #327026;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**home**/
+#home
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("images/spice.jpg");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 90px;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 0px #CCC,0px 2px 0px #ccc,0px 3px 0px #ccc,0px 4px 0px #ccc,0px 5px 0px #ccc;
+
+}
+#home p{
+    font-size: 18px;
+    color: white;
+}
+#home .input-group
+{
+    width: 40%;
+    height: 45px;
+}
+.signin
+{
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+#about
+{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    
+}
+#product
+{
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+}
+#product h1
+{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#product img
+{
+    padding: 10px;
+    width: 270px;
+    height: 200px;
+}
+.product img{
+    padding: 10px !important;
+    width: 270px;
+    height: 200px;
+}
+.card
+{
+    width: 280px;
+    height: 300px;
+    box-shadow: 15px 20px 20px rgba(0,0,0.3),inset 4px 4px 10px rgb(167, 157, 157);
+    border: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgb(99, 98, 98), -4px -4px 10px rgb(167, 157, 157);
+
+}
+
+    .box{
+        width:80% !important;
+        background: red;
+        margin-top: 10px;
+    
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+    }
+    #contact input {
+        margin:10px 0px;
+    }
+    #contact textarea{
+        margin:10px 0px;
+    }
+    footer{
+        width: 100%;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.8);
+        margin-top: -30px;
+        text-align: center;
+        color: white;
+        padding: 3px;
+    }
+    #contact
+    {
+        background:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("images/contact.jpg");
+        background-size: cover;
+        background-position: center;
+
+    }
+    #contact .display-2
+    {
+        font-weight: 700;
+    }
+    #contact img{
+
+        height:70%;
+        width: min-content;
+    }
+
+

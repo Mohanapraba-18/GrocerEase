@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyp-product page</title>
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="boot/js/bootstrap.bundle.min.js" ></script>
+    <script src="boot/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sty.css">
+    <style>
+         .modal-header, h4, .close {
+        background-color: #5cb85c;
+        color:white !important;
+        text-align: center;
+        font-size: 30px;
+      }
+      .modal-footer {
+        background-color: #f9f9f9;
+      }
+    </style>
+</head>
+<body class="showcart">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success" href="#"><img src="images/logo.png">GrocerEase</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav my-auto mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Contact us</a>
+              </li>
+              
+            </ul>
+          </div> 
+          </div>       
+    </nav>
+
+
+    <div class="container pt-5 text-center">
+        <header>
+            <div class="title">PRODUCT LIST</div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                  </svg>
+                  <span>0</span>
+                  
+            </div>
+        </header>
+        <div class="product">
+                <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around "> 
+                                 
+                                <div class="card p-2 m-3">
+                                    <img src="images/p1.jpg" class="card-img-top" >
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Coconut</h5>
+                                        <h6 class="card-title1">Rs.15</h6>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                    </div>
+                                </div>
+                                <div class="card p-2 m-3">
+                                    <img src="images/p2.jpg" class="card-img-top" >
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Tomato</h5>
+                                            <h6 class="card-title1">Rs.40/kg</h6>
+                                            <button class="btn btn-primary">ADD TO CART</button>
+                                        </div>
+                                </div>
+                                
+                                <div class="card p-2 m-3"> 
+                                    <img src="images/p3.jpg" class="card-img-top" >
+                                        <div class="card-body text-center">
+                                                <h5 class="card-title">Potato-Rs.50/Kg</h5>
+                                                <h6 class="card-title1">Rs.50/kg</h6>
+                                                <button class="btn btn-primary">ADD TO CART</button>
+                                        </div>
+                                </div>
+
+                            </div>
+                         </div>
+                         <div class="carousel-item">
+                            <div class="card-wrapper container-sm d-flex  justify-content-around">   
+                                <div class="card p-2 m-3">
+                                    <img src="images/bellpepper.jpeg" class="card-img-top" >
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Bell Pepper-Rs.15</h5>
+                                        <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="card p-2 m-3">
+                                    <img src="images/broccoli.jpeg" class="card-img-top" >
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Broccoli-Rs.87/Kg</h5>
+                                            <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                        </div>
+                                </div>
+                                <div class="card p-2 m-3">
+                                    <img src="images/cabbage.jpeg" class="card-img-top" >
+                                        <div class="card-body text-center">
+                                                <h5 class="card-title">Cabbage-Rs.20</h5>
+                                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                        </div>
+                                </div>
+
+                            </div>
+                         </div>
+                         <div class="carousel-item">
+                          <div class="card-wrapper container-sm d-flex  justify-content-around">   
+                              <div class="card p-2 m-3">
+                                  <img src="images/cauliflower.jpeg" class="card-img-top" >
+                                  <div class="card-body text-center">
+                                      <h5 class="card-title">Cauliflower-Rs.20</h5>
+                                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                  </div>
+                              </div>
+                              
+                              <div class="card p-2 m-3">
+                                  <img src="images/cherrytomato.jpeg" class="card-img-top" >
+                                      <div class="card-body text-center">
+                                          <h5 class="card-title">Cherry Tomato-Rs.90/Kg</h5>
+                                          <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                      </div>
+                              </div>
+                              <div class="card p-2 m-3">
+                                  <img src="images/ladysfinger.jpeg" class="card-img-top" >
+                                      <div class="card-body text-center">
+                                              <h5 class="card-title">Lady's Finger-Rs.42/Kg</h5>
+                                              <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                      </div>
+                              </div>
+
+                          </div>
+                       </div>
+                       <div class="carousel-item">
+                        <div class="card-wrapper container-sm d-flex  justify-content-around">   
+                            <div class="card p-2 m-3">
+                                <img src="images/corriender.jpeg" class="card-img-top" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">coriander-Rs.20</h5>
+                                    <h6 class="card-title1">Rs.20</h6>
+                                    
+                                    <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card p-2 m-3">
+                                <img src="images/mushroom.jpeg" class="card-img-top" >
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Mushroom-Rs.269/Kg</h5>
+                                        <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                            </div>
+                            <div class="card p-2 m-3">
+                                <img src="images/garlic.jpeg" class="card-img-top" >
+                                    <div class="card-body text-center">
+                                            <h5 class="card-title">Garlic-Rs.70/Kg</h5>
+                                            <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                            </div>
+
+                        </div>
+                     </div>
+                         <button class="carousel-control-prev mx-auto" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          </button>
+                            
+
+                    </div>
+                    </div>
+
+            </div>
+            <div class="carttab">
+                <h1>Shopping Cart</h1>
+                <div class="listcart">
+                    <div class="item">
+                        <div class="image">
+                            <img src="images/garlic.jpeg" alt="">
+                        </div>
+                        <div class="name">
+                            Name
+                        </div>
+                        <div class="total">
+                            Rs.20
+                        </div>
+                        <div class="quantity">
+                            <span class="plus">+</span>
+                            <span>1</span>
+                            <span class="minus">-</span>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn">
+                    <button class="closee">Close</button>
+                    <button class="checkout text-dark">Checkout</button>
+                </div>
+            </div>
+            </div>
+      
+   
+    <script src="pro.js"></script>
+</body>
+</html>
